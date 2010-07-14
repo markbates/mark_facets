@@ -13,7 +13,6 @@ rails_path = File.join(path, 'rails')
 end
 
 if defined?(Rails)
-  puts "load Rails stuff!"
   %w{rails}.each do |f|
     require File.expand_path(File.join(rails_path, f))
   end
