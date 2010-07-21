@@ -1,3 +1,5 @@
 def decode_json(json)
-  ActiveSupport::JSON.decode(json).to_mash
+  res = ActiveSupport::JSON.decode(json)
+  res = res.to_mash if res.is_a?(Hash)
+  return res
 end
