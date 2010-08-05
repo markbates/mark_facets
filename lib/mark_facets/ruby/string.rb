@@ -1,4 +1,4 @@
-require 'digest/md5' if Ruby.v18?
+require 'digest/md5'# if Ruby.v18?
 class String
   
   def md5_hash

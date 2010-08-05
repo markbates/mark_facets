@@ -5,8 +5,8 @@ describe Math do
   describe "log2" do
     
     it "should return the log2 of a given number" do
-      Math.log2(5).to_s.should == '2.32192809488736'
-      Math.log2(25).to_s.should == '4.64385618977472'
+      Math.log2(5).to_s.should == '2.321928094887362'
+      Math.log2(25).to_s.should == '4.643856189774724'
     end
     
   end
@@ -14,8 +14,8 @@ describe Math do
   describe 'logBase' do
     
     it 'should return the log of a given number with a particular base' do
-      Math.logBase(5, 10).to_s.should == '0.698970004336019'
-      Math.logBase(50, 10).to_s.should == '1.69897000433602'
+      Math.logBase(5, 10).to_s.should == '0.6989700043360187'
+      Math.logBase(50, 10).to_s.should == '1.6989700043360185'
     end
     
   end
