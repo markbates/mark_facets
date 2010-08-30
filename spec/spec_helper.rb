@@ -1,10 +1,10 @@
 require 'rubygems'
-require 'spec'
+require 'rspec'
 require 'fileutils'
 
 require File.join(File.dirname(__FILE__), '..', 'lib', 'mark_facets')
 
-Spec::Runner.configure do |config|
+Rspec.configure do |config|
   
   config.before(:all) do
     
@@ -15,11 +15,11 @@ Spec::Runner.configure do |config|
   end
   
   config.before(:each) do
-    
+
   end
   
   config.after(:each) do
-    
+
   end
   
 end
