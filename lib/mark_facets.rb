@@ -13,7 +13,7 @@ rails_path = File.join(path, 'rails')
 end
 
 if defined?(Rails)
-  %w{rails}.each do |f|
+  %w{rails time_zones}.each do |f|
     require File.expand_path(File.join(rails_path, f))
   end
 end
