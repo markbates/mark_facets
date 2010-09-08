@@ -11,7 +11,7 @@ module MagicAttributes
   end
   
   def initialize(attributes = {})
-    self.attributes = attributes.to_mash
+    self.attributes = (attributes || {}).to_mash
     self.attributes.each do |k, v|
       self.send("#{k}=", v) if self.respond_to?("#{k}=")
     end

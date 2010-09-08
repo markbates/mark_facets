@@ -29,4 +29,10 @@ describe MagicAttributes do
     f.name.should == 'TINKER BELL'
   end
   
+  it "should work if a nil is passed in" do
+    f = Fairy.new(nil)
+    f.attributes.should be_empty
+    f.attributes.should be_kind_of(Hashie::Mash)
+  end
+  
 end
