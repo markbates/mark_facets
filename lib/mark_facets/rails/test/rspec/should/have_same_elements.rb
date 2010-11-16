@@ -1,7 +1,7 @@
 if Rails.v3?
   
   def have_same_elements(expected)
-    Rspec::Matchers::Matcher.new :have_same_elements, expected do
+    RSpec::Matchers::Matcher.new :have_same_elements, expected do
       match do |actual|
         # matcher.failure_message = "expected #{given.inspect} to include the same elements as #{expected.inspect}"
         # matcher.negative_failure_message = "expected #{given.inspect} not to include the same elements as #{expected.inspect}"

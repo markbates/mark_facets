@@ -1,5 +1,5 @@
 if Rails.v3?
-  Rspec::Matchers.define :render_404 do
+  RSpec::Matchers.define :render_404 do
     match do |response|
       response.code.should == '404'
     end

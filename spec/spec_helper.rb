@@ -4,7 +4,7 @@ require 'fileutils'
 
 require File.join(File.dirname(__FILE__), '..', 'lib', 'mark_facets')
 
-Rspec.configure do |config|
+RSpec.configure do |config|
   
   config.before(:all) do
     
