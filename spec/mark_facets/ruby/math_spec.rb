@@ -44,4 +44,19 @@ describe Math do
     
   end
   
+  describe "percentage" do
+    
+    it "should return the percentage of two numbers" do
+      Math.percentage(0, 0).should == 0
+      Math.percentage(0, 1).should == 0
+      Math.percentage(1, 0).should == 0
+      Math.percentage(4, 1).should == 25
+      Math.percentage(4, 2).should == 50
+      Math.percentage(4, 3).should == 75
+      Math.percentage(4, 4).should == 100
+      Math.percentage(4, 5).should == 125
+    end
+    
+  end
+  
 end
