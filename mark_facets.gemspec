@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{mark_facets}
-  s.version = "0.1.8.20110221104334"
+  s.version = "0.1.9.20110225143926"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["markbates"]
-  s.date = %q{2011-02-21}
+  s.date = %q{2011-02-25}
   s.description = %q{mark_facets was developed by: markbates}
   s.email = %q{mark@markbates.com}
   s.extra_rdoc_files = ["README", "LICENSE"]

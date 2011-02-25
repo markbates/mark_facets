@@ -15,3 +15,17 @@ class ActiveSupport::TimeZone
   end
   
 end
+
+module Kernel
+  
+  def with_time_zone(zone, &block)
+    orig_tz = Time.zone
+    begin
+      Time.zone = zone
+      yield
+    ensure
+      Time.zone = orig_tz
+    end
+  end
+  
+end
